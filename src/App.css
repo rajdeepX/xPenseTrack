@@ -1,0 +1,17 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 3.5rem;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+.app-title span {
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
