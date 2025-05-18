@@ -1,8 +1,31 @@
-# React + Vite
+This is a **frontend-only** web app built using **React** and powered by **Vite**, designed to demonstrate core concepts in modern web development and React state management.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✅ Features
 
-Currently, two official plugins are available:
+- Add and track your daily expenses
+- Categorize expenses for better clarity
+- View a list of recent transactions
+- Clean and responsive UI
+- Built with reusable and modular components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
+
+- **React** – Component-based UI library
+- **Vite** – Fast development server and build tool
+- **ESLint** – Code quality and linting
+- **JavaScript (ES6+)** – Application logic
+
+📦 Installation
+Clone the repository:
+cd xpensetrack
+
+Install dependencies:
+npm install
+
+Start the development server:
+npm run dev
+
+
+---
+
+Let me know if you'd like to add GitHub badges, dark mode support, or local storage integration for this app.
