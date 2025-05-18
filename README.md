@@ -1,3 +1,7 @@
+# 💸 Xpensetrack – Expense Tracker App
+
+**Xpensetrack** is a simple and intuitive expense tracker app that helps users manage their daily finances. With a clean interface and quick entry features, users can add, view, and organize their expenses with ease.
+
 This is a **frontend-only** web app built using **React** and powered by **Vite**, designed to demonstrate core concepts in modern web development and React state management.
 
 ## ✅ Features
