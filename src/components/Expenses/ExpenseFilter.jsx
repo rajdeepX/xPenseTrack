@@ -4,11 +4,13 @@ const ExpensesFilter = (props) => {
   };
 
   return (
-    <div className="text-white px-4">
-      <div className="flex w-full items-center justify-between my-4">
-        <label className="font-bold mb-2">Filter by year</label>
+    <div className="mb-6 p-4 rounded-xl bg-ledger-bg/50 border border-ledger-border/50">
+      <div className="flex w-full items-center justify-between gap-4">
+        <label className="font-semibold text-sm text-ledger-muted shrink-0">
+          Filter by year
+        </label>
         <select
-          className="font-inherit py-2 px-12 font-bold rounded-md"
+          className="font-inherit py-2.5 px-4 font-semibold rounded-xl border border-ledger-border bg-ledger-elevated text-ledger-text cursor-pointer focus:outline-none focus:ring-2 focus:ring-ledger-accent/50 transition-colors"
           value={props.selected}
           onChange={dropdownChangeHandler}
         >
