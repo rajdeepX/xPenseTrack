@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItem";
-import "./Expenses.css";
 import ExpensesFilter from "./ExpenseFilter";
 import ExpensesChart from "./ExpensesChart";
 
@@ -21,7 +20,7 @@ const Expenses = (props) => {
     return expense.date.getFullYear().toString() === filteredYear;
   });
   return (
-    <Card className="expenses">
+    <Card className="p-4 bg-[#1f1f1f] my-8 mx-auto w-200 max-w-[95%]">
       <ExpensesFilter
         selected={filteredYear}
         onChangeFilter={filterChangedHandler}
