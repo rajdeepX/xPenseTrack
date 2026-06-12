@@ -1,3 +1,4 @@
+import Card from "../UI/Card";
 import ExpenseForm from "./ExpenseForm";
 
 const NewExpense = ({ onAddExpenseData }) => {
@@ -6,9 +7,17 @@ const NewExpense = ({ onAddExpenseData }) => {
   };
 
   return (
-    <div className="bg-[#780000] p-4 my-8 mx-auto w-200 max-w-[95%] rounded-xl text-center shadow-[0_1px_8px_rgba(0,0,0,0.25)] [&_button]:font-inherit [&_button]:cursor-pointer [&_button]:py-4 [&_button]:px-8 [&_button]:border [&_button]:border-[#fdf0d5] [&_button]:bg-[#fdf0d5] [&_button]:text-[#003049] [&_button]:rounded-xl [&_button]:mr-4 [&_button:hover]:bg-[#f0c673] [&_button:hover]:border-[#f0c673] [&_button:active]:bg-[#f0c673] [&_button:active]:border-[#f0c673] [&_button.alternative]:text-[#220131] [&_button.alternative]:border-transparent [&_button.alternative]:bg-transparent [&_button.alternative:hover]:bg-[#ddb3f8] [&_button.alternative:active]:bg-[#ddb3f8]">
-      <ExpenseForm onInputExpenses={inputExpensesHandler} />
-    </div>
+    <section className="my-6 mx-auto w-200 max-w-[95%]">
+      <Card className="p-6 border-ledger-accent/20">
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-2 h-2 rounded-full bg-ledger-accent animate-pulse" />
+          <h2 className="text-sm font-semibold uppercase tracking-widest text-ledger-muted">
+            New Transaction
+          </h2>
+        </div>
+        <ExpenseForm onInputExpenses={inputExpensesHandler} />
+      </Card>
+    </section>
   );
 };
 
