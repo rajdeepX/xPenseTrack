@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./ExpenseForm.css";
 
 const ExpenseForm = ({ onInputExpenses }) => {
   const [title, setTitle] = useState("");
@@ -34,19 +33,31 @@ const ExpenseForm = ({ onInputExpenses }) => {
     <form onSubmit={submitHandler}>
       {show ? (
         <>
-          <div className="new-expense__controls">
-            <div className="new-expense__control">
-              <label htmlFor="title">Title</label>
+          <div className="flex flex-wrap gap-4 mb-4 text-left">
+            <div>
+              <label
+                className="font-bold mb-2 block text-[#fdf0d5]"
+                htmlFor="title"
+              >
+                Title
+              </label>
               <input
+                className="font-inherit p-2 rounded-md border border-gray-300 w-80 max-w-full"
                 type="text"
                 onChange={handleTitleChange}
                 value={title}
                 required
               />
             </div>
-            <div className="new-expense__control">
-              <label htmlFor="amount">Amount</label>
+            <div>
+              <label
+                className="font-bold mb-2 block text-[#fdf0d5]"
+                htmlFor="amount"
+              >
+                Amount
+              </label>
               <input
+                className="font-inherit p-2 rounded-md border border-gray-300 w-80 max-w-full"
                 type="amount"
                 min="0.01"
                 step="0.01"
@@ -55,9 +66,15 @@ const ExpenseForm = ({ onInputExpenses }) => {
                 required
               />
             </div>
-            <div className="new-expense__control">
-              <label htmlFor="date">Date</label>
+            <div>
+              <label
+                className="font-bold mb-2 block text-[#fdf0d5]"
+                htmlFor="date"
+              >
+                Date
+              </label>
               <input
+                className="font-inherit p-2 rounded-md border border-gray-300 w-80 max-w-full"
                 type="date"
                 min="2019-01-01"
                 max="2023-12-31"
