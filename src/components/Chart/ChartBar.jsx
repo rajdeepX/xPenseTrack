@@ -1,5 +1,3 @@
-import "./ChartBar.css";
-
 const ChartBar = (props) => {
   let barFillHeight = "0%";
 
@@ -8,14 +6,14 @@ const ChartBar = (props) => {
   }
 
   return (
-    <div className="chart-bar">
-      <div className="chart-bar__inner">
+    <div className="h-full flex flex-col items-center">
+      <div className="h-full w-full border border-[#313131] rounded-xl bg-[#003049] overflow-hidden flex flex-col justify-end">
         <div
-          className="chart-bar__fill"
+          className="bg-[#669bbc] w-full transition-all duration-300 ease-out"
           style={{ height: barFillHeight }}
         ></div>
       </div>
-      <div className="chart-bar__label">{props.label}</div>
+      <div className="font-bold text-[0.5rem] text-center">{props.label}</div>
     </div>
   );
 };
