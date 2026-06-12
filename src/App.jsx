@@ -36,7 +36,7 @@ function App() {
   console.log(x.getFullYear());
   return (
     <div>
-      <h1 className="app-title">
+      <h1 className="app-title bg-red-500">
         xPense<span>Track</span>
       </h1>
       <NewExpense onAddExpenseData={addExpenseData} />
