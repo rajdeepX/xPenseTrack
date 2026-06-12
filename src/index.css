@@ -1,15 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-ledger-bg: #0b1120;
+  --color-ledger-surface: #141c2e;
+  --color-ledger-elevated: #1e2a42;
+  --color-ledger-border: #2d3f5e;
+  --color-ledger-accent: #10b981;
+  --color-ledger-accent-light: #34d399;
+  --color-ledger-sky: #38bdf8;
+  --color-ledger-muted: #94a3b8;
+  --color-ledger-text: #e2e8f0;
+}
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: var(--font-sans);
 }
 
 body {
   margin: 0;
-  background-color: #3f3f3f;
+  background-color: var(--color-ledger-bg);
+  color: var(--color-ledger-text);
+  -webkit-font-smoothing: antialiased;
 }
