@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
+import authRoutes from './routes/auth.routes.js'
 
 dotenv.config()
 
@@ -18,9 +19,8 @@ app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok' })
 })
 
-// Routes will be mounted here later
-// app.use('/api/auth', authRoutes)
-// app.use('/api/expenses', expenseRoutes)
+// Routes
+app.use('/api/auth', authRoutes)
 
 // 404 handler
 app.use((req, res) => {
