@@ -21,6 +21,7 @@ app.get('/health', (req, res) => {
 
 // Routes
 app.use('/api/auth', authRoutes)
+app.use('/api/expenses', expenseRoutes)
 
 // 404 handler
 app.use((req, res) => {
